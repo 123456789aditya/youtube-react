@@ -1,19 +1,7 @@
-function Header(Information,cname,children){
-    // let{Information}=props
-    // console.log(Information.email)
+// import React from 'react'
 
-    return (
-      <>
-        <div>
-          {children}
-          <h1>header part</h1>
-          <h1>{Information.email} {cname}</h1>
-          
-        </div>
-      </>
-    );
-}
-
-
-
-export default Header
+// export default function Header() {
+//   return (
+//     <div></div>
+//   )
+// }
