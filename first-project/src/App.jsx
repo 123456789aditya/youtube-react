@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import btnModule from "./Button.module.css" 
 //import Header from './Header.jsx'
 //import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 //import {faWhatsapp} from '@fortawesome/free-brands-svg-icons'
@@ -10,36 +11,20 @@ import './App.css'
 
 
 function App() {
-  let template=''
-  let[pshow,setPshow]=useState(false)
-  //let[count,setCount]=useState('1')
-  
-  if(pshow){
-    template=<>
-    <button onClick={()=>setPshow(!pshow)}>Hide</button>
-    <p>welcome to ws</p>
-    </>
-  }
-  else{
-    template=<button onClick={()=>setPshow(!pshow)}>show</button>
-  }
-  
-  // let displayData=()=>{
-  //   setCount(count+1)
-  // }
+
 
   return (
     <>
-    {/* {count}
-    <button onClick={displayData}>display data</button> */}
-    
-    
-      
-      
-    
-  
+    <div className="App">
+      <button className={btnModule.error}>error</button>
+      <button className={btnModule.warning}>warning</button>
+    </div>
+
     </>
-  );
+  )
+  
+  
+
 }
 
 export default App
