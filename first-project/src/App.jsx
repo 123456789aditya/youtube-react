@@ -10,18 +10,29 @@ import './App.css'
 
 
 function App() {
-  let [count,setCount]=useState('1')
+  let template=''
+  let[pshow,setPshow]=useState(false)
+  //let[count,setCount]=useState('1')
   
-  
-  let displayData=()=>{
-    setCount(count+1)
+  if(pshow){
+    template=<>
+    <button onClick={()=>setPshow(!pshow)}>Hide</button>
+    <p>welcome to ws</p>
+    </>
   }
+  else{
+    template=<button onClick={()=>setPshow(!pshow)}>show</button>
+  }
+  
+  // let displayData=()=>{
+  //   setCount(count+1)
+  // }
 
   return (
     <>
-    {count}
-    <button onClick={displayData}>display data</button>
-
+    {/* {count}
+    <button onClick={displayData}>display data</button> */}
+    
     
       
       
